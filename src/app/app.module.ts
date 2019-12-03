@@ -22,6 +22,11 @@ import { CreateOrderComponent } from './create-order/create-order.component';
 import { PendingOrdersComponent } from './pending-orders/pending-orders.component';
 import { OrdersHeaderComponent } from './orders-header/orders-header.component';
 import { InviteContactsComponent } from './invite-contacts/invite-contacts.component';
+import { BuyerheadertwoComponent } from './buyerheadertwo/buyerheadertwo.component';
+import { InvoicesComponent } from './invoices/invoices.component';
+import { AllInvoicesComponent } from './all-invoices/all-invoices.component';
+import { ApproveInvoicesComponent } from './approve-invoices/approve-invoices.component';
+import { InvoicesHeaderComponent } from './invoices-header/invoices-header.component';
 
 
 
@@ -43,7 +48,12 @@ import { InviteContactsComponent } from './invite-contacts/invite-contacts.compo
     CreateOrderComponent,
     PendingOrdersComponent,
     OrdersHeaderComponent,
-    InviteContactsComponent
+    InviteContactsComponent,
+    BuyerheadertwoComponent,
+    InvoicesComponent,
+    AllInvoicesComponent,
+    ApproveInvoicesComponent,
+    InvoicesHeaderComponent
 
    
   ],

@@ -12,6 +12,7 @@ import { CreateOrderComponent } from './create-order/create-order.component';
 import { ApproveOrdersComponent } from './approve-orders/approve-orders.component';
 import { PendingOrdersComponent } from './pending-orders/pending-orders.component';
 import { InviteContactsComponent } from './invite-contacts/invite-contacts.component';
+import { InvoicesComponent } from './invoices/invoices.component';
 
 const routes: Routes = [
   { path: "register", component: RegisterComponent },
@@ -19,12 +20,13 @@ const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "buyerdashboard", component: BuyerDashboardComponent },
   { path: 'payment notice', component: PaymentnoticeComponent },
-  { path: 'purchase-orders', component: OrdersComponent},
+  { path: 'orders', component: OrdersComponent},
 
   { path: 'approve-orders', component: ApproveOrdersComponent},
   { path: 'create-orders', component: CreateOrderComponent},
   { path: 'pending-orders', component: PendingOrdersComponent},
-  { path: 'invite-contacts', component: InviteContactsComponent}
+  { path: 'invite-contacts', component: InviteContactsComponent},
+  { path: 'invoices', component: InvoicesComponent}
 
   
 ];

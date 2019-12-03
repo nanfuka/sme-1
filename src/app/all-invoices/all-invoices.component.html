@@ -1,10 +1,6 @@
-<app-buyer-header></app-buyer-header>
-
-<app-buyerheadertwo></app-buyerheadertwo>
-<app-orders-header></app-orders-header>
-
+<!-- First Tab -->
+<!-- View Approved Invoices -->
 <div class="container">
-    <!-- <div class="row"></div> -->
     <mat-form-field>
       <input
         (keyup)="applyFilter($event.target.value)"
@@ -15,40 +11,53 @@
   
     <div class="mat-elevation-z8">
       <mat-table [dataSource]="dataSource" matSort>
-        <!-- Order Number Column -->
-        <ng-container matColumnDef="orderNo">
+        <!-- Inovice Number -->
+        <ng-container matColumnDef="invoiceNo">
           <mat-header-cell *matHeaderCellDef mat-sort-header
-            >Order Number</mat-header-cell
+            >Name</mat-header-cell
           >
-          <mat-cell *matCellDef="let element">{{ element.orderNo }}</mat-cell>
+          <mat-cell *matCellDef="let element">{{ element.invoiceNo }}</mat-cell>
         </ng-container>
   
-        <!-- Order Date Column -->
-        <ng-container matColumnDef="orderDate">
+        <!-- Invoice Date Column -->
+        <ng-container matColumnDef="invoiceDate">
           <mat-header-cell *matHeaderCellDef mat-sort-header
-            >Order Date</mat-header-cell
+            >Invoice Date</mat-header-cell
           >
-          <mat-cell *matCellDef="let element">{{ element.orderDate }}</mat-cell>
+          <mat-cell *matCellDef="let element">{{ element.invoiceDate }}</mat-cell>
         </ng-container>
   
-        <!-- Order Due Date Column -->
-        <ng-container matColumnDef="orderDueDate">
+        <!-- Invoice Due Date Column -->
+        <ng-container matColumnDef="invoiceDueDate">
           <mat-header-cell *matHeaderCellDef mat-sort-header
-            >Order Due Date</mat-header-cell
+            >Invoice Due Date</mat-header-cell
           >
           <mat-cell *matCellDef="let element">{{
-            element.orderDueDate
+            element.invoiceDueDate
           }}</mat-cell>
         </ng-container>
   
-        <!-- Order Status Column -->
-        <ng-container matColumnDef="orderStatus">
+        <!-- Supplier Name Column -->
+        <ng-container matColumnDef="supplierName">
           <mat-header-cell *matHeaderCellDef mat-sort-header
-            >Order Status</mat-header-cell
+            >Supplier Name</mat-header-cell
           >
-          <mat-cell *matCellDef="let element">{{ element.orderStatus }}</mat-cell>
+          <mat-cell *matCellDef="let element">{{
+            element.supplierName
+          }}</mat-cell>
         </ng-container>
-        <!-- Action Column -->
+  
+        <!-- Invoice Status Column -->
+        <ng-container matColumnDef="invoiceStatus">
+          <mat-header-cell *matHeaderCellDef mat-sort-header
+            >Invoice Status</mat-header-cell
+          >
+          <mat-cell *matCellDef="let element">{{
+            element.invoiceStatus
+          }}</mat-cell>
+        </ng-container>
+  
+        <!-- Supplier Action Column -->
         <ng-container matColumnDef="action">
           <mat-header-cell *matHeaderCellDef mat-sort-header
             >Action</mat-header-cell
@@ -57,6 +66,7 @@
             ><button class="btn-primary btn-sm">View</button></mat-cell
           >
         </ng-container>
+  
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
       </mat-table>

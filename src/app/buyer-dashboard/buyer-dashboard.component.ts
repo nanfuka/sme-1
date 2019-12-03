@@ -6,6 +6,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buyer-dashboard.component.css']
 })
 export class BuyerDashboardComponent{
-  links = ['First', 'Second', 'Third'];
   // activeLink = this.links[0];
 }
