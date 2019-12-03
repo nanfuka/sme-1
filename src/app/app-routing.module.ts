@@ -13,6 +13,8 @@ import { ApproveOrdersComponent } from './approve-orders/approve-orders.componen
 import { PendingOrdersComponent } from './pending-orders/pending-orders.component';
 import { InviteContactsComponent } from './invite-contacts/invite-contacts.component';
 import { InvoicesComponent } from './invoices/invoices.component';
+import { VaultComponent } from './vault/vault.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 const routes: Routes = [
   { path: "register", component: RegisterComponent },
@@ -26,7 +28,12 @@ const routes: Routes = [
   { path: 'create-orders', component: CreateOrderComponent},
   { path: 'pending-orders', component: PendingOrdersComponent},
   { path: 'invite-contacts', component: InviteContactsComponent},
-  { path: 'invoices', component: InvoicesComponent}
+  { path: 'invoices', component: InvoicesComponent},
+  { path: 'Vault', component: VaultComponent},
+  { path: 'Account Settings', component: AccountSettingsComponent}
+
+
+  
 
   
 ];

@@ -27,6 +27,10 @@ import { InvoicesComponent } from './invoices/invoices.component';
 import { AllInvoicesComponent } from './all-invoices/all-invoices.component';
 import { ApproveInvoicesComponent } from './approve-invoices/approve-invoices.component';
 import { InvoicesHeaderComponent } from './invoices-header/invoices-header.component';
+import { VaultComponent } from './vault/vault.component';
+import { ApprovedInvoicesComponent } from './approved-invoices/approved-invoices.component';
+import { CompletedInvoicesComponent } from './completed-invoices/completed-invoices.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -53,7 +57,11 @@ import { InvoicesHeaderComponent } from './invoices-header/invoices-header.compo
     InvoicesComponent,
     AllInvoicesComponent,
     ApproveInvoicesComponent,
-    InvoicesHeaderComponent
+    InvoicesHeaderComponent,
+    VaultComponent,
+    ApprovedInvoicesComponent,
+    CompletedInvoicesComponent,
+    AccountSettingsComponent
 
    
   ],

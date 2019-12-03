@@ -5,3 +5,7 @@
   mat-form-field {
     width: 95%;
   }
+  .spacer{
+      /* margin-top: 5%; */
+      height: 2%;
+  }
