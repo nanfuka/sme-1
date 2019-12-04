@@ -30,7 +30,9 @@ const routes: Routes = [
   { path: 'invite-contacts', component: InviteContactsComponent},
   { path: 'invoices', component: InvoicesComponent},
   { path: 'Vault', component: VaultComponent},
-  { path: 'Account Settings', component: AccountSettingsComponent}
+  { path: 'Account Settings', component: AccountSettingsComponent},
+  { path: 'login', component: LoginComponent}
+
 
 
   

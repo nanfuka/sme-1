@@ -7,6 +7,9 @@
   .mat-card .full-width {
     width: 100%;
   }
+  .spacer{
+    margin-top: 5%;
+  }
   
   /* tabs */
   .mat-tab-group {
