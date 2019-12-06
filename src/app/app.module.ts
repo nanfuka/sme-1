@@ -31,6 +31,9 @@ import { VaultComponent } from './vault/vault.component';
 import { ApprovedInvoicesComponent } from './approved-invoices/approved-invoices.component';
 import { CompletedInvoicesComponent } from './completed-invoices/completed-invoices.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { BuyComponent } from './buy/buy.component';
+import { PaymentssnoticeComponent } from './paymentssnotice/paymentssnotice.component';
+import { PuComponent } from './pu/pu.component';
 
 
 
@@ -61,7 +64,10 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     VaultComponent,
     ApprovedInvoicesComponent,
     CompletedInvoicesComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    BuyComponent,
+    PaymentssnoticeComponent,
+    PuComponent
 
    
   ],

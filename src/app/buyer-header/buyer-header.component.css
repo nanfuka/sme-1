@@ -4,26 +4,21 @@
  .gap {
     /* margin-right: 5%; */
     /* font-size: 11px; */
-    font-weight: 400; 
-    width: 100px;  
+    /* font-weight: 400; 
+    width: 20px;   */
+    margin-right: 2%;
  }
  .notofication{
-    width: 100px;
+    /* width: 100px; */
  }
  .breakbelow{
     /* margin-bottom: 5%; */
  }
- .nav{
-    
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        
-        
-    
- }
+ 
  .head{
     height: auto;
+    background-color: blue;
+    color: white;
  }
 
  .head img{
@@ -31,14 +26,7 @@
     padding-top: 3%;
  }
 
- a{
-    color: black;
-    font-size: 120%;
- }
- .nav{
-    margin-top: 17;
-   
- }
+ 
  
 
 

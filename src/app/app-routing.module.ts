@@ -15,13 +15,16 @@ import { InviteContactsComponent } from './invite-contacts/invite-contacts.compo
 import { InvoicesComponent } from './invoices/invoices.component';
 import { VaultComponent } from './vault/vault.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { BuyComponent } from './buy/buy.component';
+import { PaymentssnoticeComponent } from './paymentssnotice/paymentssnotice.component';
+import { PuComponent } from './pu/pu.component';
 
 const routes: Routes = [
   { path: "register", component: RegisterComponent },
   { path: "login", component: LoginComponent },
   { path: "", component: HomeComponent },
   { path: "buyerdashboard", component: BuyerDashboardComponent },
-  { path: 'payment notice', component: PaymentnoticeComponent },
+  { path: 'payment notice', component: PaymentssnoticeComponent },
   { path: 'orders', component: OrdersComponent},
 
   { path: 'approve-orders', component: ApproveOrdersComponent},
@@ -31,7 +34,13 @@ const routes: Routes = [
   { path: 'invoices', component: InvoicesComponent},
   { path: 'Vault', component: VaultComponent},
   { path: 'Account Settings', component: AccountSettingsComponent},
-  { path: 'login', component: LoginComponent}
+  { path: 'login', component: LoginComponent},
+  { path: 'buy', component: BuyComponent},
+  { path: 'pay', component: PaymentnoticeComponent},
+  { path: 'pu', component: PuComponent},
+
+
+  
 
 
 

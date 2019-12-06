@@ -1,19 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-paymentnotice',
-//   templateUrl: './paymentnotice.component.html',
-//   styleUrls: ['./paymentnotice.component.css']
-// })
-// export class PaymentnoticeComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { MatTableDataSource, MatSort, MatPaginator } from "@angular/material";
 export interface IAllOrders {
@@ -98,11 +82,11 @@ const ELEMENT_DATA: IAllOrders[] = [
   }
 ];
 @Component({
-  selector: 'app-paymentnotice',
-  templateUrl: './paymentnotice.component.html',
-  styleUrls: ['./paymentnotice.component.css']
+  selector: 'app-paymentssnotice',
+  templateUrl: './paymentssnotice.component.html',
+  styleUrls: ['./paymentssnotice.component.css']
 })
-export class PaymentnoticeComponent implements OnInit {
+export class PaymentssnoticeComponent implements OnInit {
   links = ['approve-orders', 'create-orders', 'pending-orders'];
 
   constructor() {}
@@ -133,5 +117,4 @@ export class PaymentnoticeComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }
-
 

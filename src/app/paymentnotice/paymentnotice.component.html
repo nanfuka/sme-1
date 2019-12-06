@@ -1,70 +1,43 @@
-<app-buyer-header></app-buyer-header>
-<app-buyerheadertwo></app-buyerheadertwo>
-<div class="row1">
+fdfsfs
+<ng-container matColumnDef="orderNo">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Invoice Number</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.orderNo }}</mat-cell>
+</ng-container>
+
+<!-- Order Date Column -->
+<ng-container matColumnDef="orderDate">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Invoice Date</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.orderDate }}</mat-cell>
+</ng-container>
+
+<!-- Order Due Date Column -->
+<ng-container matColumnDef="orderDueDate">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Invoice Due Date</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{
+              element.orderDueDate
+            }}</mat-cell>
+</ng-container>
+
+<!-- Sender Name Column -->
+<ng-container matColumnDef="senderName">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Reciever Name</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.senderName }}</mat-cell>
+</ng-container>
+
+<!-- Order Status Column -->
+<ng-container matColumnDef="orderStatus">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Invoice Status</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.orderStatus }}</mat-cell>
+</ng-container>
+
+<!-- Action Column -->
+<ng-container matColumnDef="action">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Action</mat-header-cell>
+    <mat-cell *matCellDef="let element"><button class="btn-primary btn-sm">View</button></mat-cell>
+</ng-container>
+<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+<mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
 
 
-    <div class="row">
-        <div class="col">
-            <mat-form-field  appearance="outline">
-                <input matInput placeholder="Place of Delivery">
-            </mat-form-field>
-        </div>
-        <div class="col">
-            <mat-form-field  appearance="outline">
-                <input matInput placeholder="Terms of Payment">
-            </mat-form-field>
-        </div>
-
-
-        <div class="w-100"></div>
-        <div class="col">
-            <mat-form-field  appearance="outline" >
-                <input matInput placeholder="Billing Address">
-            </mat-form-field>
-        </div>
-        <div class="col">
-            <mat-form-field  appearance="outline">
-                <input matInput placeholder="Time Period">
-            </mat-form-field>
-        </div>
-
-
-        <div class="w-100"></div>
-        <div class="col">
-            <mat-form-field  appearance="outline">
-                <input matInput placeholder="Terms of Delivery">
-            </mat-form-field>
-        </div>
-        <div class="col">
-            <mat-form-field  appearance="outline">
-                <input matInput placeholder="REF/ISBN CAT.NO">
-            </mat-form-field>
-        </div>
-
-        <div class="w-100"></div>
-
-        <div class="col">
-            <mat-form-field  appearance="outline">
-                <input matInput placeholder="Description">
-            </mat-form-field>
-        </div>
-        <div class="col">
-            <mat-form-field  appearance="outline">
-                <input matInput placeholder="Sales Unit (PCS/LTR)">
-            </mat-form-field>
-        </div>
-
-        <div class="w-100"></div>
-
-        <div class="col">
-            <mat-form-field  appearance="outline">
-                <input matInput placeholder="Quantity">
-            </mat-form-field>
-
-        </div>
-        <div class="col">
-            <!-- <mat-form-field  appearance="outline">
-                <input matInput placeholder="Quantity">
-            </mat-form-field> -->
-
-        </div>
+<mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons>
+</mat-paginator>
